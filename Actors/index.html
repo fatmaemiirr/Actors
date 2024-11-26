@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktör Yönetimi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aktör Listesi</h1>
+    <div id="actorList" class="actor-list"></div>
+    <button onclick="openModal()">+ Yeni Aktör Ekle</button>
+
+    <!-- Modal -->
+    <div id="modalOverlay" class="modal-overlay"></div>
+    <div id="modal" class="modal">
+        <h2 id="modalTitle">Yeni Aktör Ekle</h2>
+        <label for="actorName">Aktör Adı:</label>
+        <input type="text" id="actorName">
+        <label for="actorDescription">Tanım:</label>
+        <input type="text" id="actorDescription">
+        <button onclick="saveActor()">Kaydet</button>
+        <button class="cancel" onclick="closeModal()">İptal</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

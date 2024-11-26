@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5b4cf;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #d30a57;
+    font-size: 50px;
+}
+
+.actor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.actor-card {
+    border: 1px solid #fc3592;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    background-color: #ffafd7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.actor-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #831241;
+}
+
+.actor-card p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #831241;
+}
+
+.actor-card button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff006a;
+    color: rgb(252, 217, 231);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actor-card button:hover {
+    background-color: #fd236c;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f03875;
+    color: rgba(233, 233, 233, 0.993);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #b62561;
+}
+
+.cancel {
+    background-color: #d3145d;
+}
+
+.cancel:hover {
+    background-color: #8a0029;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(224, 168, 185);
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal h2 {
+    margin-top: 0;
+}
+
+.modal label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.modal input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e70045;
+    border-radius: 5px;
+}
